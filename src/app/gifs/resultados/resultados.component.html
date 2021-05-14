@@ -1,0 +1,16 @@
+<div class="row">
+    <div  *ngFor="let gif of resultados" class="col-md-4 col-sm-6 animate__animated animate__fadeIn">
+        <div class="card">
+            <div class="card-body" id="card">
+                <img [src]="gif.images.downsized_medium.url" [alt]="gif.title" class="card-img-top">
+                <p class="card-text">
+                    <b>{{ gif.title }}</b>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<hr class="text-light">
+<footer class="row p-1 text-light">
+    <p>&copy; 2021. Gifs-App. Todos los Derechos Reservados. Diseñado por <a href="https://www.linkedin.com/in/francisco-s%C3%A1ez-guerra-5720161b0/" target="_blank">Francisco Sáez G.</a></p>
+</footer>
